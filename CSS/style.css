@@ -1,0 +1,460 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+nav {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    z-index: 15;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #ADADAD; */
+}
+
+#opennav {
+    display: none;
+}
+
+#title {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    height: 100%;
+}
+
+#title-first {
+    color: orangered;
+}
+
+#title-second {
+    color: orangered;
+}
+
+.second,
+.third,
+.last {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.second ul,
+.third ul,
+.last ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0px;
+}
+
+.second ul li a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0px 20px;
+    transition: all .3s linear;
+}
+
+.second ul li {
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0px 20px;
+    transition: all .3s linear;
+}
+
+.third ul li {
+    cursor: pointer;
+    vertical-align: baseline;
+    transition: all .3s linear;
+    margin: 0px 10px;
+}
+
+.third ul li a {
+    color: black;
+    cursor: pointer;
+    vertical-align: baseline;
+    transition: all .3s linear;
+    margin: 0px 10px;
+}
+
+.second ul li a:hover,
+.third ul li a:hover {
+    color: #FF8989;
+}
+
+.last ul li {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 10px;
+}
+
+.last ul li button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+
+    border-radius: 0px;
+    padding: 5px 15px;
+    background: none;
+    border: 2px solid black;
+}
+
+.last ul li button a svg {
+    margin: 0px 2px;
+}
+
+.last ul li button a {
+    text-decoration: none;
+    /* color: black; */
+    color: black;
+}
+
+#log {
+    border: none;
+    background-color: #FF8989;
+    /* color: white; */
+}
+
+#signIn{
+    border-radius: 0px;
+    color: black;
+}
+
+
+
+.search {
+
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+    position: absolute;
+    z-index: 100000;
+}
+
+.searchclose {
+    display: none;
+}
+
+.searchBox {
+    z-index: 1000012;
+    background: rgba(79, 79, 79, 0.558);
+    position: relative;
+    width: 30%;
+    height: 40%;
+    /* border: 1px solid rgb(97, 97, 97); */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+}
+
+.searchBox span {
+    top: 3px;
+    position: absolute;
+    right: 3px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.searchBox input {
+    border: 1px solid rgb(177, 177, 177);
+    outline: none;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    padding: 5px 15px;
+    margin: 0px 10px;
+
+}
+
+.searchBox button {
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+.ImgBg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-image: url("./../young-happy-woman-shopper-showing-okay-sign-pleased-with-good-discounts-buying-staff-sale-holding.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/*  */
+
+.landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 151;
+}
+
+.landing h1 {
+    margin-left: 10%;
+    font-size: 3rem;
+    z-index: 10;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.landing h2 {
+    margin-top: 10px;
+    margin-left: 10%;
+    z-index: 10;
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.Lbtns {
+    margin-top: 20px;
+    z-index: 100;
+    margin-left: 10%;
+}
+
+.Btn1 {
+    display: flexbox;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: black;
+    background-color: white;
+    outline: none;
+    border: none;
+
+}
+
+.Btn2 {
+    margin-left: 100px;
+    display: flexbox;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    outline: none;
+    /* border: none; */
+
+}
+
+.catagory {
+    z-index: 101;
+    width: 100vw;
+    /* height: 500px; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.catagory h1 {
+    margin-top: 150px;
+    font-weight: bolder;
+    margin-bottom: 100px;
+
+}
+
+.CItem {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CInItem {
+    position: relative;
+    cursor: pointer;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CInItemImg {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.MW {
+    font-size: .8rem;
+    margin-top: 2px;
+    color: rgb(47, 47, 47);
+}
+
+.Name {
+    font-size: .9rem;
+    margin-top: 2px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Price {
+    font-size: .7rem;
+    margin-top: 2px;
+    color: rgb(47, 47, 47);
+}
+
+
+/*  */
+.Products {
+    z-index: 101;
+    width: 100vw;
+    /* height: 500px; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.Products h1 {
+    margin-top: 150px;
+    font-weight: bolder;
+    margin-bottom: 100px;
+}
+
+.Picon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: rgb(60, 60, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 5px;
+    top: 5px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.AboutSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.AboutImg {
+    width: 40%;
+}
+
+.AboutSection p {
+    font-size: 1.1rem;
+    text-align: left;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.ContactSection{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70%;
+}
+.FItem{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.FItem label{
+    font-weight: bold;
+    cursor: pointer;
+}
+.FItem input{
+    padding: 5px 15px;
+    border: 2px solid black;
+}
+.Fbtn{
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+#FeedBack{
+    padding: 5px 15px;
+    border: 2px solid black;
+}
+.Back{
+    color:blueviolet;
+    font-size: .9rem;
+    margin: 2px;
+    text-decoration: none;
+
+}
+.SignPage{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Form h1{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Form{
+
+    padding: 5px 15px;
+    margin-top: 100px;
+    width: 30%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+}
